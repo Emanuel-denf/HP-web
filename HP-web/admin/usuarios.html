@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/hpico.png" type="image/png">
     <title>Cadastros</title>
 </head>
 <body>
@@ -21,54 +22,72 @@
             </li>
         </ul>
     </nav>
-    <h1>Página de administração, cadastro e login de úsuarios.</h1>
-    <hr><hr>
-    <section>
-    <h1>Digite suas informações para se cadastrar no site.</h2>
-    <form action="/pagina-cadastrar-dados" method="POST">
-        <div>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" />
-        </div> <br>
-        <div>
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" />
-        </div> <br>
-        <div>
-            <label for="senha">Senha: </label>
-            <input type="text" id="senha">
-        </div> <br>
-        <div>
-            <label for="repetir_senha">Repetir Senha: </label>
-            <input type="text" id="repetir_senha">
-        </div> <br>
-        <div class="button">
-            <button type="submit">Cadastrar</button>
-        </div>
-    </form>
-    </section>
-    <hr><hr>
-    <section>
-        <h1>Faça aqui seu login no site.</h1>
-        <h3>E deixe uma mensagem com o seu comentário!</h3>
-        <form action="/pagina-login-dados" method="POST">
+    <header><h1>Página de administração, cadastro e login de úsuarios.</h1></header>
+    <main>
+        <hr><hr>
+        <section>
+        <h1>Digite suas informações para se cadastrar no site.</h2>
+        <form action="/pagina-cadastrar-dados" method="POST">
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" />
+            </div> <br>
             <div>
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" />
+                <input type="email" id="email" placeholder="exemplo@gmail.com"/>
             </div> <br>
             <div>
                 <label for="senha">Senha: </label>
                 <input type="text" id="senha">
             </div> <br>
             <div>
-                <label for="msg">Comentário:</label> <br>
-                <textarea id="msg"></textarea>
-            </div>
+                <label for="repetir_senha">Repetir Senha: </label>
+                <input type="text" id="repetir_senha">
+            </div> <br>
             <div class="button">
-                <button type="submit">Login</button>
+                <button type="submit">Cadastrar</button>
             </div>
         </form>
-    </section>
-  
+        </section>
+        <hr><hr>
+        <section>
+            <h1>Faça aqui seu login no site.</h1>
+            <h3>E deixe uma mensagem com o seu comentário!</h3>
+            <form action="/pagina-login-dados" method="POST">
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" />
+                </div> <br>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="text" id="senha">
+                </div> <br>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </section>
+        <h1>Tabela de usuarios cadastrados</h1>
+        <section class="tabela-de-usuarios">
+            <table style="border: 1;">
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                </tr>
+                <tr>
+                    <td>Caio</td>
+                    <td>Caio34234@hotmail.com</td>
+                    <td>342335235</td>
+                </tr>
+                <tr>
+                   <td>Leandro</td>
+                   <td>Leandrinho34221334@hotmail.com</td>
+                   <td>3483asf5144</td>
+               </tr>
+            </table>
+        </section>
+    </main> <br>
+    <footer>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
 </body>
 </html>
