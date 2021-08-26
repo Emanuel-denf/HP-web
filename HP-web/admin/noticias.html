@@ -24,21 +24,17 @@
     </nav>
     <header><h1 class="cadastro-noticias">Cadastrar Noticias</h1></header>
     <main>
-    <form action="/pagina-login-dados" method="POST">
-        <div>
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="exemplo@gmail.com"/>
-        </div> <br>
-        <div>
-            <label for="senha">Senha: </label>
-            <input type="text" id="senha">
-        </div> <br>
+    <form action="/pagina-cadastro-noticias" method="POST">
         <div>
             <label for="titulo">Titulo:</label><br>
             <textarea name="titulo" id="titulo" cols="25" rows="1"></textarea>
         </div>
+        <div>       
+            <label for="imagem">Se tiver imagem coloque aqui: </label>
+            <input type="file" name="" id="">
+        </div>
         <div>
-            <label for="msg">Noticia:</label> <br>
+            <label for="msg">Texto:</label> <br>
             <textarea id="msg" cols="30" rows="15"></textarea>
         </div>
         <div class="button">
@@ -50,22 +46,21 @@
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th>Titulo</th>
-                <th></th>
+                <th>Ações</th>
             </tr>
             <tr>
                 <td>Caio</td>
                 <td>Caio34234@hotmail.com</td>
                 <td>Ema watson começou a namorar</td>
+                <td><a href="#">editar</a>     <a href="#">apagar</a> </td>
             </tr>
             <tr>
                 <td>Leandro</td>
                 <td>Leandrinho34221334@hotmail.com</td>
                 <td>Daniel radcliff vai fazer outra serie</td>
+                <td><a href="#">editar</a>     <a href="#">apagar</a> </td>
             </tr>
-        </table>
-        <a href="#">editar</a>
-        <a href="#">apagar</a> 
-        <br>
+        </table> <br>
     </main>
     <footer>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>   
 </body>
