@@ -1,1 +1,157 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HP';
+    src: url(fontes/HARRYP__.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --cor1: #EDEDED;
+    --cor2: rgb(0, 0, 0);
+    --cor3: rgba(29, 190, 253, 0.781);
 
+    --fonte-padrao: Arial, Verdana, sans-Serif;
+    --fonte-tema: 'HP'; 
+}
+* {
+    margin: 0;
+}
+h1 {
+    font-family: var(--fonte-padrao);
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    font-family: var(--fonte-padrao);
+    font-size: 2rem;
+    text-align: center;
+}
+.cabeçalho h1 {
+    font-family: var(--fonte-tema);
+    text-align: center;
+    font-size: 3rem;
+}
+#sobre {
+    font-size: 1.5rem;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 24px;
+}
+.menu {
+    border-style: solid;
+    background-color:#EDEDED;
+}
+.menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+    justify-content: center;
+    text-align: center;
+}
+.menu ul li a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+.menu ul li {
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    }
+.menu a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.nav-secundaria h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    width: 40%;
+}
+.nav-secundaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sub-body {
+    padding: 12px 8% 6px 8%;
+    background-color: gray;
+}
+.Detalhes {
+    justify-content: space-between;
+    padding: 3px 2px 3px 2px;
+    border-radius: 3px;
+}
+.Detalhes p {
+    font-size: 1.6rem;
+    background-color: rgba(255, 68, 0, 0.685);
+    text-align: center;
+}
+.Detalhes p a {
+    color: white;
+}
+.principal {
+    padding: 12px 8% 6px 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.livros {
+    padding: 12px 12px 12px 12px;
+    columns: 150px 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.principal .livros img {
+    border-radius: 4px;
+    border: solid gray;
+}
+.livros {
+    border: 2px solid rgb(0, 0, 14);
+    background-image: url("imagens/fundo.jpg");
+
+}
+.livros article img {
+    width: 300px;
+    height: 450px;
+}
+.livros article {
+    padding: 6px 5% 6px 5%;
+    margin: 2px;
+}
+.livros article h1 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+.principal .filmes {
+    padding: 12px 12px 12px 12px;
+    columns: 150px 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.principal .filmes img {
+    border-radius: 4px;
+    border: solid gray;
+}
+.filmes {
+    border: 2px solid rgb(0, 0, 14);
+    background-image: url("imagens/fundo.jpg");
+}
+.filmes article img {
+    width: 300px;
+    height: 450px;
+}
+.filmes article {
+    padding: 6px 5% 6px 5%;
+    margin: 2px;
+}
+.filmes article h1 {
+    font-size: 1.3rem;
+    color: white;
+    font-family: var(--fonte-padrao);
+}

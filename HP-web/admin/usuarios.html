@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/hpico.png" type="image/png">
+    <link rel="shortcut icon" href="../imagens/hpico.png" type="image/png">
+    <link rel="stylesheet" href="../style2.css">
     <title>Cadastros</title>
 </head>
 <body>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="../index.html">Início</a></li>
             <li><a href="../autor.html">Autor da página</a></li>
             <li>
                 <a href="../adm.html">adm</a>
-                <ul>
+                <ul class="sub-navegacao">
                     <li><a href="usuarios.html">Cadastro e login de usuarios</a></li>
                     <li><a href="noticias.html">Noticias.</a></li>
                 </ul>       
             </li>
         </ul>
     </nav>
-    <header><h1>Página de administração, cadastro e login de úsuarios.</h1></header>
-    <main>
-        <hr><hr>
-        <section>
-        <h1>Digite suas informações para se cadastrar no site.</h2>
+    <header id='cabeçalho-usuarios'><h1>Página de administração, cadastro e login de úsuarios.</h1></header>
+    <main class='principal'>
+        <section class='cadastro'>
+        <h1>Digite as informações para cadastrar usuarios no site.</h2>
         <form action="/pagina-cadastrar-dados" method="POST">
             <div>
                 <label for="nome">Nome: </label>
@@ -48,28 +48,27 @@
             </div>
         </form>
         </section>
-        <hr><hr>
-        <h1>Tabela de usuarios cadastrados</h1>
-        <section class="tabela-de-usuarios">
-            <table style="border: 1;">
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Senha</th>
+        <section class='baixo'>
+            <h1>Tabela de usuarios cadastrados</h1>
+                <table class="tabela-dados">
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                    </tr>
+                    <tr>
+                        <td>Caio</td>
+                        <td>Caio34234@hotmail.com</td>
+                        <td>342335235</td>
+                    </tr>
+                    <tr>
+                    <td>Leandro</td>
+                    <td>Leandrinho34221334@hotmail.com</td>
+                    <td>3483asf5144</td>
                 </tr>
-                <tr>
-                    <td>Caio</td>
-                    <td>Caio34234@hotmail.com</td>
-                    <td>342335235</td>
-                </tr>
-                <tr>
-                   <td>Leandro</td>
-                   <td>Leandrinho34221334@hotmail.com</td>
-                   <td>3483asf5144</td>
-               </tr>
-            </table>
+                </table>
         </section>
     </main> <br>
-    <footer>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
+    <footer class="rodape">Desenvolvido por: <a href="../autor.html">&copy;Emanuel Silva</a></footer>
 </body>
 </html>

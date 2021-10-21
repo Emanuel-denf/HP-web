@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/hpico.png" type="image/png">
+    <link rel="stylesheet" href="style2.css">
     <title>Página de login</title>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="autor.html">Autor da página</a></li>
-        <li>
-            <a href="adm.html">adm</a>
-            <ul>
-                <li><a href="admin/usuarios.html">Cadastro e login de usuarios</a></li>
-                <li><a href="admin/noticias.html">Noticias.</a></li>
-            </ul>       
-        </li>
-    </ul>
-    <header><h1>Login para administrador</h1></header>
-    <main>
-        <form action="login" method="POST">
-        <div>
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="exemplo@gmail.com" />
-        </div> <br>
-        <div>
-            <label for="senha">Senha: </label>
-            <input type="text" id="senha">
-        </div> <br>
-        <div class="button">
-            <button type="submit">Login</button>
-        </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="autor.html">Autor da página</a></li>
+            <li>
+                <a href="adm.html">adm</a>
+                <ul>
+                    <li><a href="admin/usuarios.html">Cadastro e login de usuarios</a></li>
+                    <li><a href="admin/noticias.html">Noticias.</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header class="cabeçalho"><h1>Login para administrador</h1></header>
+    <main class="principal">
+        <form action="login" method="POST" class='formulario'>
+            <div class="login">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="exemplo@gmail.com" />
+            </div> <br>
+            <div class="login">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha">
+            </div> <br>
+            <div class="button">
+                <button type="submit">Login</button>
+            </div>
         </form>
     </main> <br>
-    <footer>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
+    <footer class="rodape">Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
 </body>
 </html> 

@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry potter</title>
     <link rel="shortcut icon" href="imagens/hpico.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <h1>Pagina Principal</h1>
     <!--Navegação de páginas-->
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="autor.html">Autor da página</a></li>
@@ -20,99 +19,127 @@
                 <ul>
                     <li><a href="admin/usuarios.html">Cadastro e login de usuarios</a></li>
                     <li><a href="admin/noticias.html">Noticias.</a></li>
-                </ul>       
+                </ul>     
             </li>
         </ul>
     </nav>
-    </header>
-    <hr><hr>
-    <!--Navegação de Filmes-->
-    <nav>
-        <h1>Filmes da série</h1>
-        <ul>
-            <li><a href="#HPf1">Harry potter e a pedra filosofal.</a></li>
-            <li><a href="#HPf2">Harry potter e a camâra secreta.</a></li>
-            <li><a href="#HPf3">Harry potter e o prisioneiro de azkaban.</a></li>
-            <li><a href="#HPf4">Harry potter e o calice de fogo.</a></li>
-            <li><a href="#HPf5">Harry potter e a ordem da Fênix.</a></li>
-            <li><a href="#HPf6">Harry potter e o enigma do principe.</a></li>
-            <li><a href="#HPf7">Harry potter e as reliquias da morte.</a></li>
-        </ul>
-        <h1>Livros da série</h1>
-        <ul>
-            <li><a href="#HPl1">Harry potter e a pedra filosofal.</a></li>
-            <li><a href="#HPl2">Harry potter e a camâra secreta.</a></li>
-            <li><a href="#HPl3">Harry potter e o prisioneiro de azkaban.</a></li>
-            <li><a href="#HPl4">Harry potter e o calice de fogo.</a></li>
-            <li><a href="#HPl5">Harry potter e a ordem da Fênix.</a></li>
-            <li><a href="#HPl6">Harry potter e o enigma do principe.</a></li>
-            <li><a href="#HPl7">Harry potter e as reliquias da morte.</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="livros">
-            <h1>Harry potter Livros</h1>
-            <article id="#HPl1">
-                <h1><a href="detalhes.html">Harry potter e a Pedra filosofal</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro1.jpg" alt="livro 1"></a>
-            </article>
-            <article id="#HPl2">
-                <h1><a href="detalhes.html">Harry potter e a camâra secreta</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro2.jpg" alt="livro 2"></a>
-            </article>
-            <article id="HPl3">
-                <h1><a href="detalhes.html">Harry potter e o prisioneiro de azkaban</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro3.jpg" alt="livro 3"></a>
-            </article>
-            <article id="HPl4">
-                <h1><a href="detalhes.html">Harry potter e a calice de fogo</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro4.jpg" alt="livro 4"></a>
-            </article>
-            <article id="#HPl5">
-                <h1><a href="detalhes.html">Harry potter e a ordem da fênix</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro5-300.jpg" alt="livro 5"></a>
-            </article>
-            <article id="#HPl6">
-                <h1><a href="detalhes.html">Harry potter e o enigma do principe</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro6.jpg" alt="livro 6"></a>
-            </article>
-            <article id="#HPl7">
-                <h1><a href="detalhes.html">Harry potter e as reliquias da morte</a></h1>
-                <a href="detalhes.html"><img src="imagens/livro7.jpg" alt="livro 7"></a>
-            </article>
-        </section>
-        <section class="filmes">
+
+    <div class="sub-body">
+        <header class='cabeçalho'>
+            <h1>HOME</h1>
+        </header>
+        <!--Navegação de Filmes-->
+        <nav class="nav-secundaria">
+            <h1><a href="#filmes">Filmes da série</a></h1>
+            <h1><a href="#livros">Livros da série</a></h1>
+        </nav>
+        <main class="principal">
+            <h1>Harry Potter livros</h1>
+            <section class="livros" id="livros">
+                <article>
+                    <h1>Harry potter e a Pedra filosofal</h1>
+                    <a href="detalhes.html"><img src="imagens/livro1.jpg" alt="livro 1"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e a camâra secreta</h1>
+                    <a href="detalhes.html"><img src="imagens/livro2.jpg" alt="livro 2"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e o prisioneiro de azkaban</h1>
+                    <a href="detalhes.html"><img src="imagens/livro3.jpg" alt="livro 3"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e a calice de fogo</h1>
+                    <a href="detalhes.html"><img src="imagens/livro4.jpg" alt="livro 4"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e a ordem da fênix</h1>
+                    <a href="detalhes.html"><img src="imagens/livro5-300.jpg" alt="livro 5"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e o enigma do principe</h1>
+                    <a href="detalhes.html"><img src="imagens/livro6.jpg" alt="livro 6"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Harry potter e as reliquias da morte</h1>
+                    <a href="detalhes.html"><img src="imagens/livro7.jpg" alt="livro 7"></a>
+                    <div class="Detalhes">
+                    <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+            </section>
             <h1>Harry potter Filmes</h1>
-            <article id="HPf1">
-                <h1><a href="detalhes.html">Harry potter e a Pedra filosofal</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme1-300.jpg" alt="Filme 1"></a>
-            </article>
-            <article id="HPf2">
-                <h1><a href="detalhes.html">Harry potter e a camâra secreta</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme2cc-300.jpg" alt="Filme 2"></a>
-            </article>
-            <article id="HPf3">
-                <h1><a href="detalhes.html">Harry potter e o prisioneiro de azkaban</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme3-300.jpg" alt="Filme 3"></a>
-            </article>
-            <article id="HPf4">
-                <h1><a href="detalhes.html">Harry potter e o calice de fogo</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme4-300.jpg" alt="Filme 4"></a>
-            </article>
-            <article id="HPf5">
-                <h1><a href="detalhes.html">Harry potter e a ordem da Fênix</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme5.jpg" alt="Filme 5"></a>
-            </article>
-            <article id="HPf6">
-                <h1><a href="detalhes.html">Harry potter e o enigma do principe</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme6-300.jpg" alt="Filme 6"></a>
-            </article>
-            <article id="HPf7">
-                <h1><a href="detalhes.html">Harry potter e as reliquias da morte</a></h1>
-                <a href="detalhes.html"><img src="imagens/filme7cc-300.jpg" alt="Filme 7"></a>
-            </article>
-        </section>
-    </main>
-    <footer>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
+            <section class="filmes" id="filmes">
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e a Pedra filosofal</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme1-300.jpg" alt="Filme 1"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e a camâra secreta</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme2cc-300.jpg" alt="Filme 2"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e o prisioneiro de azkaban</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme3-300.jpg" alt="Filme 3"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e o calice de fogo</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme4-300.jpg" alt="Filme 4"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e a ordem da Fênix</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme5.jpg" alt="Filme 5"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e o enigma do principe</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme6-300.jpg" alt="Filme 6"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+                <article>
+                    <h1><a href="detalhes.html">Harry potter e as reliquias da morte</a></h1>
+                    <a href="detalhes.html"><img src="imagens/filme7-300.jpg" alt="Filme 7"></a>
+                    <div class="Detalhes">
+                        <p ><a href="detalhes.html">Detalhes</a></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class='rodape'>Desenvolvido por: <a href="autor.html">&copy;Emanuel Silva</a></footer>
+    </div>
 </body>
 </html>

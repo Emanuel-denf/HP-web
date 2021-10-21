@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #EDEDED;
+    --cor2: rgb(0, 0, 0);
+
+    --fonte-padrao: Arial, Verdana, sans-Serif; 
+}
+
+* {
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+body{
+    background-color: rgba(0, 0, 0, 0.699);
+}
+/* rgba(0, 0, 0, 0.699) */
+.cadastro div {
+    padding: 3px;
+}
+.cadastro {
+    padding: 7px 18px 10px 18px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.726);
+}
+.cadastro h1{
+    padding: 1px 3px 6px 3px;
+    margin-bottom: 3px;
+}
+#title-noticia {
+    
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 70%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.menu {    
+width: 200px; /* Set a width if you like */
+}
+.menu a {
+    background-color: rgb(255, 255, 255); /* Grey background color */
+    color: rgb(0, 0, 0); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+.menu a:hover {
+    background-color: #ccc; 
+  }
+.menu a.active {
+    background-color: #ffffff; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+.menu li ul {
+    display: none;
+}
+.menu li:hover ul { 
+    display: block; 
+}
+.menu {
+    position: fixed;
+    right: 0;
+    top: 15%;
+    width: 15em;
+    margin-top: -2,5em;
+  }
+.principal {
+    padding: 12px 5% 6px 5%;   /* superior direita inferior esquerda*/
+}
+.button{
+    background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    border: 1px solid #CCCCCE;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+                  0 2px 7px rgba(0, 0, 0, 0.2);
+    color: #616165;
+    display: block;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow:1px 1px 0 #FFF;
+    padding: 5px 15px;
+    position: relative;
+    width: 80px;
+}
+
+.button:before{
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                  inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    position: absolute;
+}
+
+.button:after{
+    background: rgba(255, 255, 255, .4);
+    border-radius: 2px;
+    content: "";
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+.button:active{
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .2);
+    top: 4px;
+}
+.botao01:active:before{
+    border: none;
+    box-shadow:none;
+}
+
+.data-table th, td {
+    padding: 4px 8px;
+    border: 2px solid black;
+}
+tr:nth-child(even) {
+    background: #FFF;
+    } /*Intercalando cores com pseudo-classes*/
+tr:nth-child(odd) {
+        background: #EEE;
+    } 
+.baixo {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 2px solid rgb(0, 0, 0);
+    height: 500px;
+}
+#cabeçalho-usuarios {
+    color: white;
+    padding: 2px 2px 2px 2px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.principal h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+#cabeçalho-noticias {
+    color: white;
+    padding: 4px 4px 4px 4px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+}
+.rodape {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 20px 15px;
+}
+.rodape a {
+    color: rgb(56, 109, 255);
+}
